@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS basic</title>
+ 
+    <script>
+        var c = 7;
+        var q = false;
+        var jumps = 0;
+
+        function test1(){
+            var a = 188;
+            var b = 5;
+            var x = a+b+c;
+            if(x == 200){
+                q = true;
+            }
+            document.getElementById("result").innerHTML = q + ' because x = '+ x;
+        }
+
+        function test2(){
+            var a = 3;
+            var b = 9;
+            var x = a+b+c;
+            document.getElementById("result").innerHTML = x;
+        }
+
+        function test3(){
+            var a = 5;
+            var b = 6;
+            var x = a+b+c;
+            document.getElementBy("result").innerHTML = x;
+        }
+
+        function foo(){
+            var s1 = "Cat";
+            var s2 = "Jumps";
+            
+            jumps = jumps + 1; 
+            console.log(s1+' '+s2+' '+jumps + ' times');
+            //console.log(s1+' '+s2);
+            //console.log(typeof s1);
+            //console.log(typeof s2);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+            <button onclick="test1()">Test1</button>
+            <button onclick="test2()">Test2</button>
+            <button onclick="test3()">Test3</button>
+    </div>
+    <div>
+            <button onclick="foo()" >Run :)</button>
+    </div>
+
+    <div>
+        <button>Click count</button>
+    </div>
+    <div id="result">
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
