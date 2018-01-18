@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS uzduotis 2</title>
+   
+    <script>		
+		function showtext(){
+			
+			var t = document.getElementById("vardas").value;
+			t = "Labas rytas "+t;
+			document.getElementById("result").innerHTML = t;			
+			//console.log(t);
+		}
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <button id="btn" onclick="showtext()">Calculate</button>
+    </div>
+    <div>
+        <input type="text" id="vardas" />
+    </div>
+    <div id="result">
+		
+    </div>
+</body>
+
+</html>
