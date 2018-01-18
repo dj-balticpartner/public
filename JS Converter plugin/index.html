@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap empty template</title>
+    
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script>
+		function Calc(){
+			//Reikia nuskaityti metrus
+			var meters = document.getElementById("meter").value;
+			//console.log(meters);
+			
+			//TODO: Nusprest ant ko dalint
+			var unit = document.getElementById("unit").value;
+			//console.log(unit);
+			//TODO: Padalint
+			var result = 0;
+			
+			if(unit == "cm"){
+				result = meters * 100;
+			}else if(unit == "inch"){
+				result = meters * 39.37;
+			}else if(unit == "feet"){
+				result = meters * 3.28;
+			}else{
+				//TODO: sugalvot kaip parodit kad iviko klaida
+			}
+			
+			//TODO: pavaizduoti rezultata.
+			document.getElementById("result").value = result;
+		}
+	</script>
+</head>
+
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div id="app">				
+					<div class="row"> 
+						<div class="col-lg-5">
+							<div class="form-group">
+								<label for="meter">Metrai</label>
+								<input type="text" class="form-control" id="meter" placeholder="metrai...">
+							</div>
+						</div>
+						
+						<div class="col-lg-2"> = </div>
+						
+						<div class="col-lg-5">
+							<div class="form-group">
+								<label for="result">Rezultatas</label>
+								<input type="text" class="form-control" id="result" placeholder="rezultatas...">
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<select id="unit">
+							<option value="cm">cm</option>
+							<option value="inch">inch</option>
+							<option value="feet">feet</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<button id="calc" class="btn btn-success" onclick="Calc()" >Convert</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
