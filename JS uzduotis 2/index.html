@@ -8,10 +8,24 @@
     <script>		
 		function showtext(){
 			
-			var t = document.getElementById("vardas").value;
-			t = "Labas rytas "+t;
+			var vardas = document.getElementById("vardas").value;
+			var pavarde = document.getElementById("pavarde").value;
+			
+			var kreipinys = pakeisti_teksta(vardas);
+			console.log("Labas "+kreipinys);
+			
+			var t = "Labas rytas " + vardas + " " + pavarde + "!";
 			document.getElementById("result").innerHTML = t;			
 			//console.log(t);
+		}
+		
+		function pakeisti_teksta(tekstas){
+			var x = tekstas + "ai";
+			
+			x = x + " :)";
+			x = x + " Ketvirtadienis";
+			
+			return x;
 		}
     </script>
 
@@ -19,11 +33,19 @@
 
 <body>
     <div>
-        <button id="btn" onclick="showtext()">Calculate</button>
+        <button id="btn" onclick="showtext()">Go!</button>
     </div>
+	
     <div>
-        <input type="text" id="vardas" />
+		Vardas:
+        <input type="text" id="vardas" placeholder="iveskite varda..." /> 
     </div>
+	
+	<div>
+		Pavarde:
+		<input type="text" id="pavarde" placeholder="iveskite pavarde..." />
+	</div>
+	
     <div id="result">
 		
     </div>
