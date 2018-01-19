@@ -23,5 +23,13 @@ body{
 .credits{
 	text-align:center;
 }
+
+.middletext{
+	color: #aaa;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 28px;
+}
 		
 		
