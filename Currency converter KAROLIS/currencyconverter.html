@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS uzduotis 4</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+    
+    function convert () {
+        var val_first = document.getElementById('amount1').value;
+        var val_replaced = val_first;
+
+        var val = parseFloat(val_replaced) ;
+        
+        var type1 = document.getElementById('currency1').value;
+        var type2 = document.getElementById('currency2').value;
+        var res = null;
+		
+        if (type1 == 'eur' && type2 == 'eur') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'eur' && type2 == 'usd') {
+            res = val * 1.22338 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'eur' && type2 == 'gbp') {
+            res = val * 0.88277783 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'eur' && type2 == 'nok') {
+            res = val * 9.60945723 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'eur' && type2 == 'dkk') {
+            res = val * 7.44691989 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'eur' && type2 == 'sek') {
+            res = val * 9.83187334 ;
+            document.getElementById("result").value = res ;
+        }
+        
+        else if (type1 == 'usd' && type2 == 'eur') {
+            res = val * 0.81671989 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'usd' && type2 == 'usd') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'usd' && type2 == 'gbp') {
+            res = val * 0.719761039 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'usd' && type2 == 'nok') {
+            res = val * 7.8369906 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'usd' && type2 == 'dkk') {
+            res = val * 6.08124544 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'usd' && type2 == 'sek') {
+            res = val * 8.01474713 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'gbp') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'eur') {
+            res = val * 1.13470978 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'usd') {
+            res = val * 1.38935 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'nok') {
+            res = val * 10.8883229 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'dkk') {
+            res = val * 8.44897835 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'gbp' && type2 == 'sek') {
+            res = val * 11.1352889 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'nok') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'eur') {
+            res = val * 0.104213458 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'usd') {
+            res = val * 0.1276 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'gbp') {
+            res = val * 0.0918415086 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'dkk') {
+            res = val * 0.775966918 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'nok' && type2 == 'sek') {
+            res = val * 1.02268173 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'dkk') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'eur') {
+            res = val * 0.134301419 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'usd') {
+            res = val * 0.16444 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'gbp') {
+            res = val * 0.118357505 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'nok') {
+            res = val * 1.28871473 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'dkk' && type2 == 'sek') {
+            res = val * 1.31794502 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'dkk') {
+            res = val * 0.758756993 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'eur') {
+            res = val * 0.101902141 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'usd') {
+            res = val * 0.12477 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'gbp') {
+            res = val * 0.0898045849 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'nok') {
+            res = val * 0.977821317 ;
+            document.getElementById("result").value = res ;
+        }
+        else if (type1 == 'sek' && type2 == 'sek') {
+            res = val * 1 ;
+            document.getElementById("result").value = res ;
+        }
+        
+    }
+    
+    </script>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+	<div class="col-lg-4">
+		<div class="row">
+			<div class="col-lg-12">
+					<label class="label label-primary" for="amount1">Kiekis:</label>
+			</div>
+		</div>    
+		<div class="row">
+			<div class="col-lg-12">
+				<input type="text" class="form-control" id="amount1" placeholder="Iveskite kieki">    
+			</div> 
+		</div>
+		<div class="row">
+				<div class="col-lg-12">
+						<label class="label label-primary" for="currency1">Pasirinkite naudojamos valiutos tipa:</label>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-lg-12">
+					<select class="form-control" name="currency1" id="currency1">
+						<option value="eur">Eurai</option>
+						<option value="usd">Doleriai</option>
+						<option value="gbp">Svarai</option>
+						<option value="nok">Norvegijos krona</option>
+						<option value="dkk">Danijos krona</option>
+						<option value="sek">Svedijos krona</option>
+					</select>
+				</div> 
+		</div>
+
+		<div class="row">
+				<div class="col-lg-12">
+						<label class="label label-primary" for="currency2">Pasirinkite gaunamos valiutos tipa:</label>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-lg-12">
+					<select class="form-control" name="currency2" id="currency2">
+						<option value="eur">Eurai</option>
+						<option value="usd">Doleriai</option>
+						<option value="gbp">Svarai</option>
+						<option value="nok">Norvegijos krona</option>
+						<option value="dkk">Danijos krona</option>
+						<option value="sek">Svedijos krona</option>
+					</select>
+				</div> 
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<button class="btn btn-success" onclick="convert ()" id="btn">Konvertuoti</button>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-lg-12 lygybe">
+					=
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-lg-12">
+						<label class="label label-primary" for="result">Atsakymas:</label>
+				</div>
+		</div> 
+		<div class="row">
+				<div class="col-lg-12">
+					<input type="text" class="form-control" id="result" placeholder="Atsakymas">    
+				</div> 
+		</div>
+	</div>
+</div>
+
+
+    
+</div>
+
+
+</body>
+</html>
