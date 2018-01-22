@@ -22,6 +22,6 @@ function renderArray(x){
 		console.log(x[i]);
 		h = h + "<li>" +x[i]+"</li>";
 	}
-	h = h + "</ul>"
+	h = h + "</ul>";
 	document.getElementById("result").innerHTML = h;
 }
