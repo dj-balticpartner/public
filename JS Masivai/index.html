@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Masivai</title>
+    
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<script>
+		//alert("On page load");
+		
+		var cities = ["London","Vilnius","Rome","Dublin","Berlin","Tokio","New York","Kaunas", "Boston"];
+		
+		//console.log(typeof cities);
+		
+		// Kai mes norim atvaizduot pirmas 3 pozicijas
+		for (var i = 0;i < 3;i++){
+			console.log(cities[i]);
+		}
+		
+		// Kai mes norim atvaizduot visas pozicijas automatiskai, nezinodami kiek elementu yra masive.
+		for (var i = 0;i < cities.length;i++){
+			console.log(cities[i]);
+		}
+		
+		
+	</script>
+	
+</head>
+
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div id="app">
+					<div id="result">
+					<!-- <button onclick="funkcija()">Run</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
