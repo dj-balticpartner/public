@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap empty template</title>
+    
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<style>
+		
+	</style>
+</head>
+
+<body>
+    <div class="container container-position">
+	
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6
+col-md-offset-3	col-sm-offset-3">
+				<div class="formwrapper">
+					<form id="RegistrationForm">
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="firstname">First name *:</label>
+							<input type="text" class="form-control" id="firstname"  placeholder="Enter first name">
+							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+							</div>
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="lastname">Last name *:</label>
+							<input type="lastname" class="form-control" id="lastname" placeholder="Enter lastname">
+							
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="phone">Phone *:</label>
+							
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-phone fa-fw" aria-hidden="true"></i>										
+								</span>
+							  <input type="number" class="form-control" id="phone"  placeholder="Your phonenumber...">
+							</div>						
+							
+							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+							</div>
+							<div class="form-group col-lg-6 col-md-6">
+								<label for="Email">Email*:</label>
+								
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>										
+									</span>
+								  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-lg-12 col-md-12">
+							<label for="Address">Address *:</label>
+							<input type="Text" class="form-control" id="address"  placeholder="Your address...">
+							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="zip">Zipcode :</label>
+							<input type="number" class="form-control" id="zip"  placeholder="Zipcode...">
+							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+							</div>
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="city">City *:</label>
+							<input type="text" class="form-control" id="city" placeholder="City ...">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+							<label for="zip">Country *:</label>
+							<select class="form-control" >
+							  <option selected>- choose country -</option>
+							  <option value="LT">Lithuania</option>
+							  <option value="UK">United kingdom</option>
+							  <option value="USA">USA</option>
+							  <option value="RU">Russia</option>
+							  <option value="DE">Germany</option>
+							  <option value="FR">France</option>
+							</select>
+							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+						</div>
+							
+						</div>
+						
+						<hr>
+						
+						<div class="row">
+							<div class="form-group col-lg-3 col-md-3">
+								<label for="age">Age *:</label>
+								<input type="number" class="form-control" id="age" placeholder="Age ">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+								
+								<div class="form-check">
+								  <label class="form-check-label">
+									<input class="form-check-input" type="radio" name="sport" value="often" checked>Often sports
+								  </label>
+								</div>
+								<div class="form-check">
+								  <label class="form-check-label">
+									<input class="form-check-input" type="radio" name="sport"  value="sometimes">Sports sometimes
+								  </label>
+								</div>
+								<div class="form-check">
+								  <label class="form-check-label">
+									<input class="form-check-input" type="radio" name="sport"  value="never">Never sports
+								  </label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-lg-12 col-md-12">
+								<div class="checkbox">
+								  <label><input type="checkbox" value="">I accept terms and conditions </label>
+								</div>
+							</div>
+						</div>
+						
+						<hr>
+						
+						<div class="row">
+							<div class="form-group col-lg-6 col-md-6">
+								<button class="btn btn-primary fullwidth">
+          <span class="fa fa-check"></span> Submit
+        </button>
+		
+							</div>
+							<div class="form-group col-lg-6 col-md-6">
+								
+									<button class="btn btn-danger fullwidth">
+			  <span class="fa fa-times"></span> Clear
+			</button>
+								
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
