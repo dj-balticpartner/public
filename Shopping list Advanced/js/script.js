@@ -56,7 +56,7 @@ function printArray(arr){
 	for(var i = 0;i < arr.length;i++){
 		console.log(arr[i]);
 		h = h + "<li>" +arr[i]+"<button class='' onclick='remove("+ i +")'>X</button>"+"</li>";
-	}
+	}	
 	h = h + "</ul>";
 	document.getElementById("result").innerHTML = h;
 }

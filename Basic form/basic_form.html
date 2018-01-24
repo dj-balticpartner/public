@@ -53,7 +53,7 @@ col-md-offset-3	col-sm-offset-3">
 								<span class="input-group-addon">
 									<i class="fa fa-phone fa-fw" aria-hidden="true"></i>										
 								</span>
-							  <input type="number" class="form-control" id="phone"  placeholder="Your phonenumber...">
+							  <input type="number" name="phone" class="form-control" id="phone"  placeholder="Your phonenumber...">
 							</div>						
 							
 							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
@@ -65,7 +65,7 @@ col-md-offset-3	col-sm-offset-3">
 									<span class="input-group-addon">
 										<i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>										
 									</span>
-								  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+								  <input id="email" name="email" type="text" class="form-control"  placeholder="Email">
 								</div>
 							</div>
 						</div>
@@ -73,7 +73,7 @@ col-md-offset-3	col-sm-offset-3">
 						<div class="row">
 							<div class="form-group col-lg-12 col-md-12">
 							<label for="Address">Address *:</label>
-							<input type="Text" class="form-control" id="address"  placeholder="Your address...">
+							<input type="text" name="address" class="form-control" id="address"  placeholder="Your address...">
 							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
 							</div>
 						</div>
@@ -81,19 +81,19 @@ col-md-offset-3	col-sm-offset-3">
 						<div class="row">
 							<div class="form-group col-lg-6 col-md-6">
 							<label for="zip">Zipcode :</label>
-							<input type="number" class="form-control" id="zip"  placeholder="Zipcode...">
+							<input type="text" name="zipcode" class="form-control" id="zip"  placeholder="Zipcode...">
 							<!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
 							<label for="city">City *:</label>
-							<input type="text" class="form-control" id="city" placeholder="City ...">
+							<input type="text" name="city" class="form-control" id="city" placeholder="City ...">
 							</div>
 						</div>
 						
 						<div class="row">
 							<div class="form-group col-lg-6 col-md-6">
-							<label for="zip">Country *:</label>
-							<select class="form-control" >
+							<label for="select_country">Country *:</label>
+							<select class="form-control" id="select_country" name="country" >
 							  <option selected>- choose country -</option>
 							  <option value="LT">Lithuania</option>
 							  <option value="UK">United kingdom</option>
@@ -112,7 +112,7 @@ col-md-offset-3	col-sm-offset-3">
 						<div class="row">
 							<div class="form-group col-lg-3 col-md-3">
 								<label for="age">Age *:</label>
-								<input type="number" class="form-control" id="age" placeholder="Age ">
+								<input type="number" name="age" class="form-control" id="age" placeholder="Age ">
 							</div>
 						</div>
 						
@@ -140,7 +140,7 @@ col-md-offset-3	col-sm-offset-3">
 						<div class="row">
 							<div class="form-group col-lg-12 col-md-12">
 								<div class="checkbox">
-								  <label><input type="checkbox" value="">I accept terms and conditions </label>
+								  <label><input type="checkbox" value="" name="accept_terms" id="accept_terms">I accept terms and conditions.</label>
 								</div>
 							</div>
 						</div>
