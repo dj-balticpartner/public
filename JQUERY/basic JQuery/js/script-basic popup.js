@@ -1,12 +1,11 @@
-$(document).ready(function(){	
-		
-	$(".topIconFigure, .user-popup").mouseenter(function () {
-		$(".user-popup").slideDown('slow');
+$(document).ready(function(){
+			
+	$("#trigger").mouseenter(function(){
+		$(".user-popup").stop().slideDown( 5000 );
 	});
-	
-	$(".topIconFigure, .user-popup").mouseleave(function () {
-		$(".user-popup").slideUp('slow');
-	});
+	$("#trigger").mouseleave(function(){
+		$(".user-popup").stop().slideUp( 5000 );
+	});	
 	
 	
 	$("ul.lvl_1 li.lvl_1").click(function () {		
