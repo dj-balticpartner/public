@@ -1,6 +1,8 @@
 var clickcount = 0;
 
 $(document).ready(function(){	
+		
+	
     /******************
 	*#1 Button and link
 	*******************/
@@ -14,7 +16,8 @@ $(document).ready(function(){
 	});
 	
 	$(".link_class").click(function () {
-		$("#res_1").text("Vienas is linku buvo paklickintas"); 
+		$(this).fadeOut('fast');
+		//$("#res_1").text("Vienas is linku buvo paklickintas"); 
 	});
 	$("#btn_toggle_bg").mouseenter(function () {
 		$(this).css("background-color", "yellow");
@@ -31,8 +34,6 @@ $(document).ready(function(){
 	/******************
 	*#2 Div layout example
 	*******************/
-
-	
 	$(".circle").mouseenter(function () {
 		$("#res_2").html("uzvaziavom ant apskritimo");
 	});
@@ -40,6 +41,19 @@ $(document).ready(function(){
 	$(".square").mouseenter(function () {
 		$("#res_2").html("uzvaziavom ant kvadrato");
 	});
+	
+	$(".circle, .square").mouseleave(function () {
+		//$("#res_2").html("<div style='width:50px;height:50px;background:pink;'>Naujas elementas</div>");
+		$("#res_2").text("");
+	});
+	/******************
+	*#3 image example
+	*******************/
+	
+	$(".targetImg").click(function () {
+		$(this).slideUp('fast');
+	});
+	
 	
 });
 	
