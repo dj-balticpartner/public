@@ -18,7 +18,7 @@ let btn_submit = document.getElementById("Register");
 let link_clear = document.getElementById("link_clear");
 let link_clearCache = document.getElementById("link_clearCache");
 
-btn_submit.addEventListener("click", addCar);
+//btn_submit.addEventListener("click", addCar);
 link_clear.addEventListener("click", clearForm);
 link_clearCache.addEventListener("click", clearCache);
 
@@ -40,6 +40,13 @@ function addCar(){
 		model: model,
 		color: color
 	};
+	
+	//TODO: check for duplicates
+	if (checkForDuplicates(c, cars)){
+        alert("Tokia masina jau egzistuoja");
+        return;
+    }
+	
 	//turim sukurt nauja objekta ir ideti ji i masiva.
 	cars.push(c);
 	
@@ -52,6 +59,16 @@ function addCar(){
 	//displayCar(c);
 	displayCars(cars);
 }
+
+function checkForDuplicates(car, cars) {
+    let isDuplicate = false;
+    cars.forEach(function(item){
+        if (item.brand === car.brand && item.model === car.model) {
+            isDuplicate = true;
+        }
+    })
+    return isDuplicate;
+};
 
 function clearForm(){
 	formelement.reset();
