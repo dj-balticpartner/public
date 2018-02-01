@@ -121,3 +121,96 @@ h2{
 	color:#fff;
 }
 
+#navigation ul.lvl_1{
+		padding-left:0px;
+		margin-left:0px;
+	}
+	#navigation ul.lvl_1 li.lvl_1{
+		list-style:none;
+		background:#aaa;
+		color:#333;
+		/*display:block;*/
+		display:inline-block;
+		float:left;
+		margin-right:50px;
+		padding:5px 15px;
+		font-size:16px;	
+position:relative;		
+	}
+	
+	ul.lvl_1 li.lvl_1 a{
+		display:block;
+		padding-left:5px;
+		color:#fff;
+	}
+	
+	ul.lvl_2{
+		position:absolute;
+		padding-left:0px;
+	}
+	
+	.isiskleidziantis{
+	display:none;
+	}
+	
+	ul.lvl_2{
+		border:1px solid #aaa;
+	}
+	
+	ul.lvl_2 li{
+		
+		display:block;
+		
+	}
+	
+	ul.lvl_2 li.lvl_2 a{
+		display:block;
+		padding-left:20px;
+		color:#333;
+		background:#fff;
+		width:200px;
+		border-top:1px solid #aaa;
+	}
+	
+	
+	
+	.topIcon{
+		position:absolute;
+		font-size: 40px;
+	}
+	
+	.title{
+		display:block;
+		padding-left:50px;
+	}
+	
+	.topIconFigure{
+		background:orange;
+		color:#fff;
+		min-height:50px;
+	}
+	
+	.user-popup{
+		display:none;
+		background:lime;		
+		width:200px;
+		right:0px;
+		top:50px;
+		position:absolute;
+	}
+	
+	.popup-wrap{
+		padding:15px;
+	}
+	
+	.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+	position:absolute;
+	top: 12px;
+    right: 4px;
+}
+
