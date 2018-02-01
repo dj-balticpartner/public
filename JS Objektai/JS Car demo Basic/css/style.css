@@ -1,0 +1,27 @@
+header{
+	background:url('../img/header.jpg') no-repeat center center fixed;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+
+header h1{
+	padding:30px 15px;
+	color:#fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.additional_info{
+	font-size:11px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d6d6d6;
+    margin: 1em 0;
+    padding: 0; 
+}
