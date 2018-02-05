@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filter cars</title>
+    
+	<!-- Latest compiled JavaScript -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" >
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"  href="lightslider/css/lightslider.css"/>
+
+<link href="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.8.0/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	
+	<style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		
+    </style>
+</head>
+
+<body>
+<header>
+	<h1>Filter cars demo</h1>
+</header>
+
+<section id="selectDates">
+<div class="row">
+	<div class="col-sm-6">
+		<h3>Datepicker demo</h3>
+		<div>
+			<label for="from">From</label>
+			<input type="text" id="dp1" name="from" class="datepicker">
+			<label for="to">to</label>
+			<input type="text" id="dp2" name="to" class="datepicker">
+		</div>
+	</div>
+</div>
+</section>
+
+<main>
+	<div class="container">
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="CarSlider">
+        <div class="item">            
+            <div class="clearfix" style="max-width:100%;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="img/thumbnails/audi.png"> 
+                        <img src="img/audi.png" />
+                         </li>
+                    <li data-thumb="img/thumbnails/bmw.png"> 
+                        <img src="img/bmw.png" />
+                         </li>
+                    <li data-thumb="img/thumbnails/vw.png"> 
+                        <img src="img/vw.png" />
+                         </li>
+                    <li data-thumb="img/thumbnails/fiat.png"> 
+                        <img src="img/fiat.png" />
+                         </li>
+                    <li data-thumb="img/thumbnails/mazda.png"> 
+                        <img src="img/mazda.png" />
+					 </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>	
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-sm-8">
+				<div id="app">
+					<form class="form-inline">
+					  
+					  <div class="form-group">
+						<label for="brandSelect">Brand:</label>
+						
+						<select id="brandSelect" name="brand" class="form-control">
+						  <option value="audi">Audi</option>
+						  <option value="bmw">Bmw</option>
+						  <option value="citroen">Citroen</option>
+						  <option value="VW">VW</option>
+						  <option value="Fiat">Fiat</option>
+						  <option value="Lada">Lada</option>
+						  <option value="Mazda">Mazda</option>
+						  <option value="Skoda">Skoda</option>
+						</select>
+						
+					  </div>
+					  <button type="button" id="btn_filter" class="btn btn-default">Filter</button>
+					  
+					</form>
+				</div>
+				<div id="filteredCars">
+				  </div>
+			</div>
+			<div class="col-sm-4">
+				<h2>Naujausia masina:</h2>
+				<div id="newest">
+					Result
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</main>
+    
+	<script src="lightslider/js/lightslider.js"></script> 
+    <script src="js/CARS.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.8.0/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
+	
+    <script src="js/script.js"></script>
+	
+	<script>
+    	 $(document).ready(function() {			
+            $('#image-gallery').lightSlider({
+                keyPress:true,
+				autoWidth: true,
+				gallery:true,
+                item:2,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:200,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+			
+			$('#dp1').datepicker({
+				uiLibrary: 'bootstrap4'
+			});
+			
+			$('#dp2').datepicker({
+				uiLibrary: 'bootstrap4'
+			});
+		});
+    </script>
+</body>
+
+</html>

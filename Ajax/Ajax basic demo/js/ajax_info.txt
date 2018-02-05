@@ -1,0 +1,3 @@
+<h1>Ajax veikia!</h1>
+<p>Labas rytas Kaunas!</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Gertrude%27s_in_Kaunas.jpg" />
