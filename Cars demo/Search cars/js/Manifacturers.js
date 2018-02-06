@@ -10,17 +10,17 @@ function getCountry(brand) {
 	  'japan': 'Asia'	  
   }
 
-  if(brand == "audi" || brand == 'bmw' || brand == 'vw') {
+  if(brand.toLowerCase() == "audi" || brand.toLowerCase() == 'bmw' || brand.toLowerCase() == 'vw') {
     return countries.germany;
-  } else if (brand == 'citroen') {
+  } else if (brand.toLowerCase() == 'citroen') {
     return countries.france;
-  } else if(brand == 'fiat') {
+  } else if(brand.toLowerCase() == 'fiat') {
     return countries.italy;
-  } else if(brand == 'lada') {
+  } else if(brand.toLowerCase() == 'lada') {
     return countries.ussr;
-  } else if(brand == 'mazda') {
+  } else if(brand.toLowerCase() == 'mazda') {
     return countries.japan;
-  } else if(brand == 'skoda') {
+  } else if(brand.toLowerCase() == 'skoda') {
     return countries.czech;
   }
 }
